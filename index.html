@@ -1,0 +1,56 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-form">
+            <h2>Sign Up</h2>
+            <p>It's quick and easy.</p>
+            <form action="#" method="POST">
+                <input type="text" name="first-name" placeholder="First name" required>
+                <input type="text" name="surname" placeholder="Surname" required>
+                <input type="text" name="contact" placeholder="Mobile number or email address" required>
+                <input type="password" name="password" placeholder="New password" required>
+                
+                <label for="dob">Date of birth</label>
+                <div class="dob">
+                    <select name="day" required>
+                        <!-- Options for day -->
+                        <option value="text">8</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <select name="month" required>
+                        <!-- Options for month -->
+                        <option value="text">Jul</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <select name="year" required>
+                        <!-- Options for year -->
+                        <option value="text">2024</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+
+                <label for="gender">Gender</label>
+                <div class="gender">
+                    <input type="radio" name="gender" value="Female" required> Female
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Custom" required> Custom
+                </div>
+                <p class="policy-text">
+                    People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a>
+                </p>
+                <p class="terms-text">
+                    By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+                </p>
+                <center><button type="submit">Sign Up</button></center>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
